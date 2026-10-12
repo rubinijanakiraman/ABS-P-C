@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS P&C 5.0</title>
+    <meta name="description" content="Insurance Process Intelligence Agent for bulk artifact validation, LOB detection, and agentic transformation analysis.">
+    <meta property="og:title" content="ABS P&C 5.0">
+    <meta property="og:description" content="Insurance Process Intelligence Agent for bulk artifact validation, LOB detection, and agentic transformation analysis.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Material+Icons+Round&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#A000FF", // Updated to vibrant purple from the image
+              "background-light": "#f0f2f5",
+              "background-dark": "#020617",
+              "card-light": "#ffffff",
+              "card-dark": "#0f172a",
+              "header-accent": "#1e293b"
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        
+        .tree-row {
+          display: flex;
+          align-items: center;
+          padding: 8px 12px;
+          cursor: pointer;
+          user-select: none;
+          border-radius: 8px;
+          transition: all 0.2s ease;
+        }
+        .tree-row:hover { background-color: rgba(160, 0, 255, 0.05); }
+        .dark .tree-row:hover { background-color: rgba(160, 0, 255, 0.1); }
+        
+        .tree-guide {
+          position: absolute;
+          left: 18px;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background-color: #e2e8f0;
+        }
+        .dark .tree-guide { background-color: #1e293b; }
+
+        @keyframes flow-particle {
+          0% { offset-distance: 0%; opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { offset-distance: 100%; opacity: 0; }
+        }
+
+        .flow-path {
+          stroke-dasharray: 4 4;
+          stroke: #A000FF;
+          stroke-opacity: 0.2;
+        }
+
+        .data-particle {
+          width: 8px;
+          height: 8px;
+          background: #A000FF;
+          border-radius: 50%;
+          position: absolute;
+          box-shadow: 0 0 10px #A000FF;
+        }
+
+        .playing .data-particle {
+          animation: flow-particle 3s linear infinite;
+        }
+
+        /* Matches the reference image's section containers */
+        .arch-section {
+          background-color: #E6E6E6;
+          padding: 1rem;
+          margin-bottom: 0.5rem;
+          border-radius: 2px;
+        }
+        .dark .arch-section {
+          background-color: #1e293b;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

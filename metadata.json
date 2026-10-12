@@ -1,0 +1,11 @@
+{
+  "name": "ABS P\u0026C 5.0",
+  "description": "Insurance Process Intelligence Agent for bulk artifact validation, LOB detection, and agentic transformation analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
